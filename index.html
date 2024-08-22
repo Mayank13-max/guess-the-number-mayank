@@ -33,18 +33,18 @@
                 const guess = Number(document.getElementById('user-input').value)
                 if(guess === randomnumber){
                     console.log("success")
-                    result.textContent="success"
+                    result.textContent="Congratulations! You've guessed correctly!"
                     result.className='alert alert-success'
                     submit.disabled = true
                 }
                 else if(guess<randomnumber){
                     console.log("small")
-                    result.textContent="small"
+                    result.textContent="Too low! Try again."
                     result.className="alert alert-danger"
                 }
                 else{
                     console.log("large")
-                    result.textContent="large"
+                    result.textContent="Too high! Try again."
                     result.className="alert alert-danger"
                 }
             }
